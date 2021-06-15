@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 6 Q3</title> 
+    <style>
+        body{
+            background-color: #E6E6FA;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+    <script>
+		function ToBeCalled()
+		{
+  			alert("I was called");
+		}
+
+		function iNeedParameter( paramFunc) 
+		{
+   			if (paramFunc && (typeof paramFunc == "function")) 
+   				{
+      				paramFunc();   
+   				}
+		}
+		iNeedParameter(ToBeCalled); 
+	</script>
+</head>
+<body>
+<h1>SIG WEB TASK 6</h1>
+<h3>Q3.WAP in JavaScript to pass a function as parameter.</h3>
+</body>
+</html>					

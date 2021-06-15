@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 6 Q2</title> 
+    <style>
+        body{
+            background-color: #FFFACD;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+    <script>
+    function addition()
+    {
+        num1 = Number(document.getElementById("firstNumber").value);
+        num2 = Number(document.getElementById("secondNumber").value);
+        document.getElementById("result").innerHTML = num1 + num2;
+    }
+    function sub()
+    {
+        num1 = Number(document.getElementById("firstNumber").value);
+        num2 = Number(document.getElementById("secondNumber").value);
+        document.getElementById("result").innerHTML = num1 - num2;
+    }
+
+    function multiply()
+    {
+        num1 = Number(document.getElementById("firstNumber").value);
+        num2 = Number(document.getElementById("secondNumber").value);
+        document.getElementById("result").innerHTML = num1 * num2;
+    }
+
+    function divide() 
+    { 
+        num1 = Number(document.getElementById("firstNumber").value);
+        num2 = Number(document.getElementById("secondNumber").value);
+        document.getElementById("result").innerHTML = num1 / num2;
+    }
+    function remainder() 
+    { 
+        num1 = Number(document.getElementById("firstNumber").value);
+        num2 = Number(document.getElementById("secondNumber").value);
+        document.getElementById("result").innerHTML = num1 % num2;
+    }
+    function exponent() 
+    { 
+        num1 = Number(document.getElementById("firstNumber").value);
+        num2 = Number(document.getElementById("secondNumber").value);
+        document.getElementById("result").innerHTML = num1 ** num2;
+    }
+
+</script>
+</head>
+<body>
+<h1>SIG WEB TASK 6</h1>
+<h3>Q2.WAP in JavaScript to perform arithmetic operations on two numbers.</h3>
+<form>
+<h4>1st Number : </h4>
+<input id="firstNumber"></input>
+<br>
+<h4>2nd Number: </h4>
+<input id="secondNumber"></input>
+<br>
+<br>
+<input type="button" onClick="addition()" Value="Addition"></input>
+<input type="button" onClick="sub()" Value="Subtraction"></input>
+<input type="button" onClick="multiply()" Value="Multiply"></input>
+<input type="button" onClick="divide()" Value="Divide"></input>
+<input type="button" onClick="remainder()" Value="Remainder"></input>
+<input type="button" onClick="exponent()" Value="Exponent"></input>
+
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</body>
+</html>

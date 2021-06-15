@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 6 Q1</title> 
+    <style>
+        body{
+            background-color: #FFA07A;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+    <script>
+    function check_leapyear(){
+
+        var year;
+        year = document.getElementById("year").value;
+
+        //three conditions to find out the leap year
+        if( (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0) )
+        {
+            alert(year+" is a leap year");  
+        }
+        else
+        {
+            alert(year+" is not a leap year");  
+        }
+    }
+</script>
+</head>
+<body>
+<h1>SIG WEB TASK 6</h1>
+<h3>Q1.WAP in JavaScript to ckeck given year is leap year or not.</h3>
+<h4>Enter Year: </h4>
+<input type="text" id="year"></input>
+<button onclick="check_leapyear()">Check</button>
+</body>
+</html>
